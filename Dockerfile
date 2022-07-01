@@ -6,6 +6,6 @@ COPY pom.xml ./
 RUN mvn -f ./pom.xml clean package
 
 FROM openjdk:17-alpine3.13
-COPY --from=build /home/app/target/demo-0.0.1-SNAPSHOT.jar /usr/local/lib/demo.jar
+COPY --from=build ./target/todoApp-0.0.1-SNAPSHOT.jar /usr/local/lib/todoApp.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/demo.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/todoApp.jar"]
