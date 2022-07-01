@@ -1,0 +1,4 @@
+2022-07-01 07:45:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE todos ALTER COLUMN id RESTART WITH 1\000d\000a[*]select * from todos"; SQL statement:
+ALTER TABLE todos ALTER COLUMN id RESTART WITH 1
+select * from todos [42000-214]
