@@ -4,4 +4,4 @@ WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 COPY src ./src
-CMD ["spring-boot:run", "-Dspring-boot.run.profiles=mysql"]
+CMD ["./mvnw", "spring-boot:run", "-Dspring-boot.run.profiles=mysql"]
