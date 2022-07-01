@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM maven:3.6.0-jdk-17-slim AS build
+FROM maven:3.8.6-jdk-11-slim AS build
 COPY src ./src
 COPY pom.xml /home/app
 RUN mvn -f /home/app/pom.xml clean package
