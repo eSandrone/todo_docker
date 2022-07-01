@@ -1,0 +1,5 @@
+com\sandrone\todoapp\todoapp\repositories\TodoRepository.class
+com\sandrone\todoapp\todoapp\entities\Todo.class
+com\sandrone\todoapp\todoapp\controller\HelloWorldController.class
+com\sandrone\todoapp\todoapp\controller\TodoRestController.class
+com\sandrone\todoapp\todoapp\TodoAppApplication.class

@@ -1,5 +1,5 @@
-/app/src/main/java/com/sandrone/todoapp/todoapp/TodoAppApplication.java
-/app/src/main/java/com/sandrone/todoapp/todoapp/controller/HelloWorldController.java
-/app/src/main/java/com/sandrone/todoapp/todoapp/entities/Todo.java
-/app/src/main/java/com/sandrone/todoapp/todoapp/controller/TodoRestController.java
-/app/src/main/java/com/sandrone/todoapp/todoapp/repositories/TodoRepository.java
+C:\Users\Done\Desktop\Projects\Java\todo_docker\src\main\java\com\sandrone\todoapp\todoapp\TodoAppApplication.java
+C:\Users\Done\Desktop\Projects\Java\todo_docker\src\main\java\com\sandrone\todoapp\todoapp\entities\Todo.java
+C:\Users\Done\Desktop\Projects\Java\todo_docker\src\main\java\com\sandrone\todoapp\todoapp\repositories\TodoRepository.java
+C:\Users\Done\Desktop\Projects\Java\todo_docker\src\main\java\com\sandrone\todoapp\todoapp\controller\HelloWorldController.java
+C:\Users\Done\Desktop\Projects\Java\todo_docker\src\main\java\com\sandrone\todoapp\todoapp\controller\TodoRestController.java
