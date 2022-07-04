@@ -1,4 +1,6 @@
 package com.sandrone.todoapp.todoapp.configuration;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.*;
@@ -8,6 +10,12 @@ import java.io.IOException;
 
 @Configuration
 public class ConfigurationCors implements Filter {
+
+    private final Logger log = LoggerFactory.getLogger(ConfigurationCors.class);
+
+    public ConfigurationCors() {
+        log.info("SimpleCORSFilter init");
+    }
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException { }
