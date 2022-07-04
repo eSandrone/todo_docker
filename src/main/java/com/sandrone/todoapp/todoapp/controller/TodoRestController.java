@@ -10,7 +10,6 @@ import com.sandrone.todoapp.todoapp.repositories.TodoRepository;
 
 
 @RestController
-@CrossOrigin
 public class TodoRestController {
 	
 	@Autowired
