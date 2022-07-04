@@ -4,6 +4,9 @@ metadata:
   name: mysql-deployment
   labels:
     app: mysql
+  annotations:
+    fluxcd.io/tag.mysql: semver:~8.0
+    fluxcd.io/automated: 'true'
 spec:
   replicas: 1
   selector:
