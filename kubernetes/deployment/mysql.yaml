@@ -6,7 +6,7 @@ metadata:
   labels:
     app: mysql
   annotations:
-    fluxcd.io/tag.mysql: "semver: >= 8.0.23, <8.0.29"
+    fluxcd.io/tag.mysql: semver:~8.0.2
     fluxcd.io/automated: 'true'
 spec:
   replicas: 1
