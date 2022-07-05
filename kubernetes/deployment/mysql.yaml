@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -5,7 +6,7 @@ metadata:
   labels:
     app: mysql
   annotations:
-    fluxcd.io/tag.mysql: semver:~8.0
+    fluxcd.io/tag.mysql: semver:~8.0.2
     fluxcd.io/automated: 'true'
 spec:
   replicas: 1
@@ -18,21 +19,16 @@ spec:
         app: mysql
     spec:
       containers:
-        - name: mysql
-          image: mysql:8.0.23
-          ports:
-            - containerPort: 3306
-          env:
-            - name: MYSQL_ROOT_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: mysql-secret
-                  key: mysql-password
-            - name: mysql-url
-              valueFrom:
-                configMapKeyRef:
-                  name: mysql-config
-                  key: mysql-url
+      - name: mysql
+        image: mysql:8.0.29
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: mysql-password
 ---
 apiVersion: v1
 kind: Service
@@ -42,6 +38,5 @@ spec:
   selector:
     app: mysql
   ports:
-    - protocol: TCP
-      port: 3306
-      targetPort: 3306
+  - protocol: TCP
+    port: 3306
