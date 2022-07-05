@@ -8,4 +8,4 @@ RUN mvn -f ./pom.xml clean package
 FROM openjdk:17-alpine3.13
 COPY --from=build ./target/todo-app-0.0.1-SNAPSHOT.jar /usr/local/lib/todo-app-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/todo-app-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/todo-app-0.0.1-SNAPSHOT.jar", "--host", "0.0.0.0"]
