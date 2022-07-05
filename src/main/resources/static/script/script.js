@@ -8,7 +8,7 @@
  var clearCompletedBtn = document.getElementById("clear__completed");
  var list = document.getElementById("list");
  var completed = document.getElementById("list__completed");
- var url = "http://localhost:8080/";
+ var url = "http://192.168.49.2:30100/";
  var lastId;
 
  addBtn.addEventListener("click", addToDO);
