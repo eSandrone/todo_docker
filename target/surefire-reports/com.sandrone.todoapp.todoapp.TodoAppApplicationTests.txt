@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sandrone.todoapp.todoapp.TodoAppApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.898 s - in com.sandrone.todoapp.todoapp.TodoAppApplicationTests
