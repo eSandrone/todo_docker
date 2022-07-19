@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: todo
-          image: donerepo/todoapp
+          image: donerepo/todo-flux-v2:1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
